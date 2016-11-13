@@ -1,0 +1,43 @@
+DEVELOPING DATA PRODUCT - FINAL ASSIGNMENT
+========================================================
+author: Vaibhav Singh   
+date: 13/11/2016
+autosize: true
+
+Introduction Slide
+========================================================
+
+Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch 
+ 
+                            THE PITCH
+Dataset chosen: Women which contains Average Heights and Weights for American Women
+
+Information about dataset
+========================================================
+Average Heights and Weights for American Women
+
+Description
+
+This data set gives the average heights and weights for American women aged 30-39.
+
+A data frame with 15 observations on 2 variables.
+
+[,1]	height	 numeric	 Height (in)
+[,2]	weight	 numeric	 Weight (lbs)
+
+
+
+Average Heights and Weights for American Women
+========================================================
+
+```{r,echo=FALSE,height=40,width=40, fig.align="center"}
+data("women")
+plot(women$height, women$weight,xlab="Height of the women", ylab="Weight of women", main = "Average Heights and Weights for American Women")
+model1 <- lm(weight~height, data=women)
+abline(model1,col="red", lwd=2)
+```
+
+
+THANK YOU
+========================================================
+Please let me know in case I missed out on something. 
